@@ -1,7 +1,8 @@
 import Menu from "./components/Menu/Menu";
-import Main from "./components/Main/main"
 import { createGlobalStyle } from "styled-components";
-
+import '../src/components/CSS/index.css';
+import React from 'react';
+import Main from './components/Main/main';
 
 const GlobalStyle = createGlobalStyle`
     body {
@@ -19,7 +20,7 @@ const App = () => {
         <div>
             <GlobalStyle />
             <Menu />
-            <Main/>
+            <Main />
         </div>
     );
 };
