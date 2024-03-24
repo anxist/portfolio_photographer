@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
-
 import Hamburger from "../Hamburger/hamburger";
 import { StyledMenu, StyledLink } from "./menu.styled";
+
 
 import { useOnClickOutside } from "../../hooks";
 
@@ -13,11 +13,23 @@ const Menu = () => {
     useOnClickOutside(node, () => setOpen(false));
 
     return (
-        <div ref={node}>
+        <div className="menu" ref={node}>
             <StyledMenu open={open}>
-                <StyledLink onClick={() => close()}>Link 1</StyledLink>
-                <StyledLink onClick={() => close()}>Link 2</StyledLink>
-                <StyledLink onClick={() => close()}>Link 3</StyledLink>
+                <div className="about_us">
+                    <div className="about_us_links">
+                        <h1 className="name">WIll S.</h1>
+                        <StyledLink className="link" onClick={() => close()}>Home</StyledLink>
+                        <StyledLink className="link" onClick={() => close()}>About</StyledLink>
+                        <StyledLink className="link" onClick={() => close()}>Porotraits</StyledLink>
+                        <StyledLink className="link" onClick={() => close()}>Fashion</StyledLink>
+                        <StyledLink className="link" onClick={() => close()}>Motion</StyledLink>
+                        <StyledLink className="link" onClick={() => close()}>contact</StyledLink>
+                    </div>
+                    <div className="contact us">
+                        <p>contact@yoursite.com</p>
+
+                    </div>
+                </div>
             </StyledMenu>
             <Hamburger open={open} setOpen={setOpen} />
         </div>

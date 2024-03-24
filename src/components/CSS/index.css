@@ -1,17 +1,21 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Montserrat, sans-serif;
 }
 
-
+.Montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100vh;
-
-
 }
 .main_flex{
     display: flex;
@@ -33,13 +37,39 @@
     margin: 0;
     outline: none;
     width: 50px;
-
 }
 .svg{
     width: 50px;
     height: 50px;
 }
-
-#Close, #Next, #Previous, #rect{
-
+.name{
+    font-size: 64px;
+    color: white;
+    text-align: center;
+    margin-top: -70px;
+    margin-bottom: 70px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.about_us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.link{
+    font-size: 18px !important;
+    padding-bottom: 10px !important;
+    text-transform: uppercase !important;
+    cursor: pointer;
+}
+.about_us_links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
 }
