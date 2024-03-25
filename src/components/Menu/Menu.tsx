@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import Hamburger from "../Hamburger/hamburger";
 import { StyledMenu, StyledLink } from "./menu.styled";
-import  { ReactComponent as Facebook} from "../img/uil_facebook-f.svg";
+import Facebook from "../img/";
 
 
 import { useOnClickOutside } from "../../hooks";
@@ -29,7 +29,24 @@ const Menu = () => {
                     <div className="contact us">
                         <p>contact@yoursite.com</p>
                         <div>
+                            <img>
+                                src={Facebook}
+                            </img>
+                            <img className="network">
 
+                            </img>
+                            <img className="network">
+
+                            </img>
+                            <img className="network">
+
+                            </img>
+                            <img className="network">
+
+                            </img>
+                            <img className="network">
+
+                            </img>
                         </div>
 
                     </div>
