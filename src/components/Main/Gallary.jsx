@@ -48,7 +48,7 @@ const Gallery = () => {
                 }}>
                     <button onClick={()=> imgAction()} style={{ position: 'absolute', top: 0, right: 0,  border: 'none',
                         background: 'none',
-                        padding: 0,
+                        padding: 10,
                         margin: 0,
                         outline:'none',
                         width: '50px'}}>

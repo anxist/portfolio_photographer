@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import Hamburger from "../Hamburger/hamburger";
 import { StyledMenu, StyledLink } from "./menu.styled";
-import Facebook from "../img/";
+
 
 
 import { useOnClickOutside } from "../../hooks";
@@ -26,29 +26,10 @@ const Menu = () => {
                         <StyledLink className="link" onClick={() => close()}>Motion</StyledLink>
                         <StyledLink className="link" onClick={() => close()}>contact</StyledLink>
                     </div>
-                    <div className="contact us">
+                    <div className="contact_us">
                         <p>contact@yoursite.com</p>
-                        <div>
-                            <img>
-                                src={Facebook}
-                            </img>
-                            <img className="network">
-
-                            </img>
-                            <img className="network">
-
-                            </img>
-                            <img className="network">
-
-                            </img>
-                            <img className="network">
-
-                            </img>
-                            <img className="network">
-
-                            </img>
-                        </div>
-
+                        <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+                        <p>© {new Date().getFullYear()}, Narizhnyaya Diana</p>
                     </div>
                 </div>
             </StyledMenu>

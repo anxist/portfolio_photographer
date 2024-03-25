@@ -5,7 +5,7 @@ export const StyledMenu = styled.nav<{ open: boolean }>`
   top: 0;
   left: 0;
   height: 100vh;
-  width: 35vw;
+  width: 25vw;
   position: fixed;
   background-color: ${colors.purple};
   z-index: 1;

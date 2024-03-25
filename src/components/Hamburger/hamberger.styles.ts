@@ -4,7 +4,7 @@ import { colors } from "../../global";
 
 export const StyledHamburger = styled.button<{ open: boolean }>`
     position: fixed;
-    left: ${({ open }) => (open ? "29vw" : "3vw")};
+    left: ${({ open }) => (open ? "20vw" : "3vw")};
     top: 3vw;
     width: 2rem;
     height: 2rem;
