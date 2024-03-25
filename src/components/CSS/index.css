@@ -83,23 +83,6 @@ html{
 .eIjsUl, .sc-guDLey{
     padding: 0 !important;
 }
-.link:before {
-    content: "" !important;;
-    position: absolute !important;;
-    bottom: -3px !important;; /* Располагаем подчеркивание снизу от текста */
-    left: 0 !important;;
-    width: 100% !important;;
-    height: 2px !important;; /* Высота подчеркивания */
-    background-color: #ff4500 !important;; /* Цвет подчеркивания */
-    transform: scaleX(0) !important;; /* Начальная ширина подчеркивания (0, чтобы скрыть) */
-    transform-origin: left !important;; /* Определяем начальную точку преобразования */
-    transition: transform 0.3s ease-in-out !important;; /* Анимация растяжения */
-}
-
-/* Анимация подчеркивания при наведении */
-.link:hover:before {
-    transform: scaleX(1) !important;; /* Увеличиваем ширину подчеркивания до 100% */
-}
 .contact_us a{
     text-decoration: none;
     color: white;
