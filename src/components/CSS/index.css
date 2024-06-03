@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Montserrat, sans-serif;
+    text-decoration: none;
 }
 html{
     -ms-overflow-style: none;  /* IE и Edge */
@@ -22,6 +23,7 @@ html{
     width: 100%;
     height: 100vh;
 }
+
 .main_flex{
     display: flex;
     align-items: start;
@@ -33,7 +35,10 @@ html{
 .masonry {
     width: 80%;
     height: 90%;
-    padding: 10px;
+    padding: 20px;
+}
+.my-masonry-grid {
+    margin: 50px;
 }
 #button{
     border: none;
@@ -55,6 +60,7 @@ html{
 }
 .menu{
     display: flex;
+    position: fixed;
     align-items: center;
     justify-content: center;
     padding: 20px;
@@ -66,18 +72,47 @@ html{
     align-items: center;
     height: 100vh;
 }
+.about{
+    height: 751px;
+    width: 1184px;
+}
+.about h2{
+    font-size: 48px;
+    line-height: 200%;
+    font-weight: 400;
+    margin-bottom: 80px;
+}
+.about_text_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+.text_about{
+    width: 569px;
+    font-size: 18px;
+}
 .link{
-    font-size: 18px !important;
+    font-size: 20px !important;
     margin-bottom: 15px !important;
     text-transform: uppercase !important;
     cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+.link:hover{
+    text-decoration: underline;
+    color: white;
+    width: 100%;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 3px;
 }
 
 .about_us_links{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 80%;
+    width: 70%;
     height: 550px;
 }
 .eIjsUl, .sc-guDLey{
@@ -93,4 +128,36 @@ html{
     justify-content: space-around;
     color: white;
     height: 100px;
+}
+.work_history{
+    display: flex;
+    flex-direction: column;
+    height: 316px;
+    width: 572px;
+}
+.history{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.data{
+    width: 150px;
+    font-size: 18px;
+}
+.job{
+    width: 400px;
+    font-size: 18px;
+}
+.player-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1184px;
+    height: 751px;
+}
+.player-wrapper div{
+    width: 540px !important;
+    height: 260px  !important;
 }

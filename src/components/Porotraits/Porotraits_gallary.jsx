@@ -7,14 +7,15 @@ import '../CSS/index.css';
 
 
 const images = [
-    "https://i.pinimg.com/originals/85/03/74/8503744b925296441c4232177da9893e.jpg",
-    "https://i.pinimg.com/originals/4a/03/8a/4a038a570f002949b5dbc6fee669ab9b.jpg",
-    "https://i.pinimg.com/736x/1a/73/d1/1a73d1300ee4361deaa15d8a576c4872.jpg",
-    "https://i.pinimg.com/736x/41/aa/b3/41aab3b8765bba49497f55f95c837fac.jpg",
-    "https://yesyes.ua/uploads/news/52e55efe237731c07ad5b0a3a2b6d8ea_59058.jpg",
-    "https://i.pinimg.com/736x/71/70/f4/7170f497b90e04b486ee07e1cd37afa9.jpg",
-    "https://trikky.ru/wp-content/blogs.dir/1/files/2021/08/19/1616685745-26-p-estetika-krasivo-29.jpg",
-    "https://i.pinimg.com/736x/30/53/a2/3053a2a80a0c1d378eb9b60f6a4e867d.jpg",
+    "https://static-cdn5-2.vigbo.tech/u6258/7695/blog/1433943/5424332/71446047/1000-AMF-62aa4e4eeaf9090eff728566609950f5.jpg",
+    "https://i.pinimg.com/originals/b3/f2/de/b3f2deb97a8025dc7cf4177e8f8efcd3.jpg",
+    "https://cs10.pikabu.ru/post_img/big/2019/05/31/4/1559279194170880240.jpg",
+    "https://photocrew.ru/images/phocagallery/biznes/img_9917.jpg",
+    "https://gallery.alexandersakulin.com/storage/app/media/gallery/_Portrait/2021-Mikhail-Shufutinsky/18-feb_21-MS_port-74078-r-web_1800_60p.jpg",
+    "https://img.freepik.com/free-photo/portrait-of-beautiful-albino-woman_23-2150520258.jpg",
+    "https://img.freepik.com/premium-photo/a-blond-woman-with-freckled-hair-and-white-blouse-looking-at-camera_90186-213.jpg?size=626&ext=jpg&ga=GA1.1.2116175301.1717286400&semt=ais_user",
+    "https://flomaster.top/uploads/posts/2022-06/1655570101_2-flomaster-club-p-idei-dlya-portreta-krasivo-2.jpg",
+    "https://klaudiali.ru/web/wp-content/uploads/2021/05/826A8791-scaled.jpg",
 ]
 
 const Gallery = () => {
@@ -75,8 +76,8 @@ const Gallery = () => {
                 </div>
             }
             <div className="masonry">
-                <ResponsiveMasonry
-                    columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
+                <ResponsiveMasonry className="my-masonry-grid"
+                                   columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
                 >
                     <Masonry gutter="20px">
                         {images.map((image, i) => (

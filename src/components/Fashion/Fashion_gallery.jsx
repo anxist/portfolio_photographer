@@ -7,14 +7,14 @@ import '../CSS/index.css';
 
 
 const images = [
-    "https://i.pinimg.com/originals/85/03/74/8503744b925296441c4232177da9893e.jpg",
-    "https://i.pinimg.com/originals/4a/03/8a/4a038a570f002949b5dbc6fee669ab9b.jpg",
-    "https://i.pinimg.com/736x/1a/73/d1/1a73d1300ee4361deaa15d8a576c4872.jpg",
-    "https://i.pinimg.com/736x/41/aa/b3/41aab3b8765bba49497f55f95c837fac.jpg",
-    "https://yesyes.ua/uploads/news/52e55efe237731c07ad5b0a3a2b6d8ea_59058.jpg",
-    "https://i.pinimg.com/736x/71/70/f4/7170f497b90e04b486ee07e1cd37afa9.jpg",
-    "https://trikky.ru/wp-content/blogs.dir/1/files/2021/08/19/1616685745-26-p-estetika-krasivo-29.jpg",
-    "https://i.pinimg.com/736x/30/53/a2/3053a2a80a0c1d378eb9b60f6a4e867d.jpg",
+    "https://gallery.alexandersakulin.com/storage/app/uploads/public/1b1/47f/df5/thumb__0_800_0_0_auto.jpg",
+    "https://i.pinimg.com/564x/e0/70/b5/e070b52b63fa64da1a07bcbe32317936.jpg",
+    "https://mobile.photoprocenter.ru/uimages/73a416fdfb23f01d1e858ca6d9b56e18.jpg",
+    "https://www.etoday.ru/assets/2016/5/20/Nina-Agdal-CR-Fashion-Book-Food-2016-Photos04.jpg",
+    "https://i.pinimg.com/736x/00/1c/97/001c9799bb0c4b4d160f11d86b3b74ac.jpg",
+    "https://i.pinimg.com/564x/00/3f/d2/003fd2af1e9fa13d568129bd146e7d79.jpg",
+    "https://i.pinimg.com/564x/84/d2/88/84d2880af84d7ce6036ee9c9578c9eb0.jpg",
+    "https://i.pinimg.com/564x/0f/c4/7a/0fc47a343c335bf3700a023d4a4c3036.jpg",
 ]
 
 const Gallery = () => {
@@ -75,8 +75,8 @@ const Gallery = () => {
                 </div>
             }
             <div className="masonry">
-                <ResponsiveMasonry
-                    columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
+                <ResponsiveMasonry className="my-masonry-grid"
+                                   columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
                 >
                     <Masonry gutter="20px">
                         {images.map((image, i) => (
